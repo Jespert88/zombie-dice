@@ -1,0 +1,79 @@
+
+body {
+  background-color: #111;
+}
+h1{text-align: center;}
+
+img{
+  border-radius: 40px;
+  box-shadow: 2px 2px 2px #000;
+  margin: 5px;
+}
+
+.diceWindow{
+  margin: 10%;
+}
+
+#rollAll{
+  margin: 4%;
+  background: #fa5050;
+ background-image: -webkit-linear-gradient(top, #fa5050, #6e0a0a);
+ background-image: -moz-linear-gradient(top, #fa5050, #6e0a0a);
+ background-image: -ms-linear-gradient(top, #fa5050, #6e0a0a);
+ background-image: -o-linear-gradient(top, #fa5050, #6e0a0a);
+ background-image: linear-gradient(to bottom, #fa5050, #6e0a0a);
+ -webkit-border-radius: 30;
+ -moz-border-radius: 30;
+ border-radius: 30px;
+ text-shadow: 2px 1px 11px #000000;
+ -webkit-box-shadow: 4px 4px 16px #000000;
+ -moz-box-shadow: 4px 4px 16px #000000;
+ box-shadow: 4px 4px 16px #000000;
+ font-family: Arial;
+ color: #ffffff;
+ font-size: 25px;
+ padding: 6px 12px 10px 12px;
+ border: solid #000000 2px;
+ text-decoration: none;
+}
+#rollAll:hover {
+  background: #ff7373;
+  background-image: -webkit-linear-gradient(top, #ff7373, #b80b0b);
+  background-image: -moz-linear-gradient(top, #ff7373, #b80b0b);
+  background-image: -ms-linear-gradient(top, #ff7373, #b80b0b);
+  background-image: -o-linear-gradient(top, #ff7373, #b80b0b);
+  background-image: linear-gradient(to bottom, #ff7373, #b80b0b);
+  text-decoration: none;
+}
+
+.diceButtons{
+  background: #fa5050;
+ background-image: -webkit-linear-gradient(top, #fa5050, #6e0a0a);
+ background-image: -moz-linear-gradient(top, #fa5050, #6e0a0a);
+ background-image: -ms-linear-gradient(top, #fa5050, #6e0a0a);
+ background-image: -o-linear-gradient(top, #fa5050, #6e0a0a);
+ background-image: linear-gradient(to bottom, #fa5050, #6e0a0a);
+ -webkit-border-radius: 30;
+ -moz-border-radius: 30;
+ border-radius: 30px;
+ text-shadow: 2px 1px 11px #000000;
+ -webkit-box-shadow: 4px 4px 16px #000000;
+ -moz-box-shadow: 4px 4px 16px #000000;
+ box-shadow: 4px 4px 16px #000000;
+ font-family: Arial;
+ color: #ffffff;
+ width: 120px;
+ font-size: 25px;
+ padding: 6px 12px 10px 12px;
+ border: solid #000000 2px;
+ text-decoration: none;
+}
+.diceButtons:hover{
+  background: #ff7373;
+  background-image: -webkit-linear-gradient(top, #ff7373, #b80b0b);
+  background-image: -moz-linear-gradient(top, #ff7373, #b80b0b);
+  background-image: -ms-linear-gradient(top, #ff7373, #b80b0b);
+  background-image: -o-linear-gradient(top, #ff7373, #b80b0b);
+  background-image: linear-gradient(to bottom, #ff7373, #b80b0b);
+  text-decoration: none;
+}
