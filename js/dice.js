@@ -1,33 +1,31 @@
 
 
-
-
 function roll() {
-
     var dice = {
         sides: 6,
-        roll: function() {
+        roll: function () {
             var randomNumber = Math.floor(Math.random() * this.sides) + 1;
             return randomNumber;
         },
-        color: function() {
+        color: function () {
             var colorArr = ["green", "yellow", "red"];
             var randomColor = Math.floor(Math.random() * colorArr.length) + 0;
             return colorArr[randomColor];
         }
     }
-
     var finalDice = dice.color() + dice.roll();
-    console.log(finalDice);
 
+    try {
         // Green brain.
         if (finalDice === "green1") {
             var imageElement = document.getElementById("dice");
             imageElement.src = "./img/Green-Brain.jpg";
-        } else if (finalDice === "green2") {
+        }
+        else if (finalDice === "green2") {
             var imageElement = document.getElementById("dice");
             imageElement.src = "./img/Green-Brain.jpg";
-        } else if (finalDice === "green3") {
+        }
+        else if (finalDice === "green3") {
             var imageElement = document.getElementById("dice");
             imageElement.src = "./img/Green-Brain.jpg";
         };
@@ -86,28 +84,28 @@ function roll() {
             var imageElement = document.getElementById("dice");
             imageElement.src = "./img/Red-Boom.jpg"
         }
-
+    } catch (error) {
+        console.log(error);
+    }
 }
-
-
 
 function rollTwo() {
 
     var dice = {
         sides: 6,
-        roll: function() {
+        roll: function () {
             var randomNumber = Math.floor(Math.random() * this.sides) + 1;
             return randomNumber;
         },
-        color: function() {
+        color: function () {
             var colorArr = ["green", "yellow", "red"];
             var randomColor = Math.floor(Math.random() * colorArr.length) + 0;
             return colorArr[randomColor];
         }
     }
-
     var finalDice = dice.color() + dice.roll();
-    console.log(finalDice);
+
+    try {
 
         // Green brain.
         if (finalDice === "green1") {
@@ -175,28 +173,28 @@ function rollTwo() {
             var imageElement = document.getElementById("dice2");
             imageElement.src = "./img/Red-Boom.jpg"
         }
-
+    } catch (error) {
+        console.log(error);
+    }
 }
-
 
 function rollThree() {
 
     var dice = {
         sides: 6,
-        roll: function() {
+        roll: function () {
             var randomNumber = Math.floor(Math.random() * this.sides) + 1;
             return randomNumber;
         },
-        color: function() {
+        color: function () {
             var colorArr = ["green", "yellow", "red"];
             var randomColor = Math.floor(Math.random() * colorArr.length) + 0;
             return colorArr[randomColor];
         }
     }
-
     var finalDice = dice.color() + dice.roll();
-    console.log(finalDice);
 
+    try {
         // Green brain.
         if (finalDice === "green1") {
             var imageElement = document.getElementById("dice3");
@@ -263,10 +261,10 @@ function rollThree() {
             var imageElement = document.getElementById("dice3");
             imageElement.src = "./img/Red-Boom.jpg"
         }
-
+    } catch (error) {
+        console.log(error);
+    }
 }
-
-
 
 function rollAllDice() {
     roll();

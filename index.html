@@ -1,13 +1,26 @@
-
 <!DOCTYPE html>
 <html>
 
 <head>
   <title> Zombie Dice </title>
   <meta charset='utf-8'>
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,  minimum-scale=1.0">
-  <!-- Bootstrap Css 4.0 beta-->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,  minimum-scale=1.0">
+  <!-- Bootstrap 4.0.0 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- Boostrap js -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <!-- My js files -->
+  <script src="js/dice.js"></script>
   <!-- font awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
   <!-- Google Fonts -->
@@ -15,44 +28,22 @@
   <!-- Mina fil -->
   <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
-
 <body>
 
-  <center>
-  <div class="diceWindow">
+    <h1>Zombie Dice</h1>
+    <h2>Press the buttons to roll one dice or all</h2>
 
-     <img id="dice" style="width: 20%; height:auto;">
+    <div id="diceContainer">
+      <img id="dice" class="diceImgs">
+      <img id="dice2" class="diceImgs">
+      <img id="dice3" class="diceImgs">
+    </div><br>
 
-
-     <img id="dice2" style="width: 20%; height:auto;">
-
-
-     <img id="dice3" style="width: 20%; height:auto;">
-
-  </div>
-
-
-  </center>
-  <center>
-    <button class="diceButtons" onclick="roll()">One</button>
-    <button class="diceButtons" onclick="rollTwo()">Two</button>
-    <button class="diceButtons" onclick="rollThree()">Three</button><br>
-    <button id="rollAll" onclick="rollAllDice()">Role All Dice</button>
-  </center>
-
-
-
-
+    <div id="buttonContainer">
+      <button class="diceBtns" onclick="roll()">One</button>
+      <button class="diceBtns" onclick="rollTwo()">Two</button>
+      <button class="diceBtns" onclick="rollThree()">Three</button><br><br>
+      <button id="rollAllBtn" onclick="rollAllDice()">Role All Dice</button>
+    </div>
 </body>
-<!-- jQuerry 3.2.1 min.js-->
-<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-<!-- popper.js 1.11.0 -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-<!-- Bootstrap CDN 4.0.0. Beta-->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-<!-- Font Awesome v5.0.1 -->
-<script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
-<!-- Mitt egna skript -->
-<script src="js/dice.js"></script>
-
 </html>
