@@ -13,6 +13,11 @@ h2 {
   font-weight: lighter;
   font-style: italic;
 }
+p {
+  text-align: center;
+  font-weight: lighter;
+  font-style: italic;
+}
 img{
   border-radius: 40px;
   box-shadow: 2px 2px 2px #000;
